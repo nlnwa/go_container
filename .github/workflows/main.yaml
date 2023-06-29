@@ -33,3 +33,17 @@ jobs:
               with:
                   version: v1.53
                   args: --config=.golangci.yaml
+    codeqL-build:
+        name: CodeQL build
+        runs-on: ubuntu-latest
+        permissions:
+            security-events: write
+        steps:
+          - name: Checkout repository
+            uses: actions/checkout@v3
+          - name: Initialize CodeQL
+            uses: github/codeql-action/init@v2
+          - name: Autobuild
+            uses: github/codeql-action/autobuild@v2
+          - name: Perform CodeQL Analysis
+            uses: github/codeql-action/analyze@v2
