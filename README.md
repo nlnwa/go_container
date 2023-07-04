@@ -30,3 +30,13 @@ The actual contents depends on the project you have.
 
 If you have 3rd party dependencies, their licenses should be placed in
 `/licenses-dependencies/<name-of-dependency>`
+
+### Set up dependabot
+
+Create a new Github label `dependencies` by following
+`https://github.com/<ORG>/<REPO>/issues/labels`, as it is required by
+`dependabot`.
+
+Set up dependabot by accessing
+`https://github.com/<ORG>/<REPO>/settings/security_analysis` and enabling the
+following: `Dependabot alerts` and `Dependabot security updates`.
