@@ -10,6 +10,11 @@ This repo exists to more easily create a container based service with `golang`
 
 When using this repo as a template, remember to do the following
 
+### Set up Secret scanning
+
+Access `https://github.com/<ORG>/<REPO>/settings/security_analysis` and enable
+`Secret scanning` and its sub-option `Push protection`.
+
 ### Set up branch protection rules
 
 The default (`main`) branch should be protected, so please ensure that the
