@@ -16,7 +16,8 @@ The default (`main`) branch should be protected, so please ensure that the
 branch is sufficiently protected. The following should be enabled:
 
 * Require minimum number of PR reviewers
-* Require `Test` and `Lint` workflow jobs to pass before merging
+* Require `Test`, `Lint`, `CodeQl build` and `CodeQL`(from Github Code
+  Scanning) workflow jobs to pass before merging
 * Require branch is up to date before merging
 * Do not allow bypassing the above settings
 
