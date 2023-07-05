@@ -7,7 +7,7 @@ updates:
       labels:
           - "dependencies"
       commit-message:
-          prefix: "build(deps)"
+          prefix: "build"
           include: "scope"
 
     - package-ecosystem: "docker"
@@ -17,7 +17,7 @@ updates:
       labels:
           - "dependencies"
       commit-message:
-          prefix: "build(deps)"
+          prefix: "build"
           include: "scope"
 
     - package-ecosystem: "github-actions"
@@ -27,5 +27,5 @@ updates:
       labels:
           - "dependencies"
       commit-message:
-          prefix: "build(deps)"
+          prefix: "build"
           include: "scope"
